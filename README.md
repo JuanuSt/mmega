@@ -88,7 +88,7 @@ Check status for accounts in config file accounts_mega.gpg and show the files:
       mmega --config accounts_mega --mode status --files --passwd            (script will ask)
       mmega --config accounts_mega --mode status --files --passwd "PASSWORD"
 ```
-![Alt text](/images/.png?raw=true "Optional Title")
+![Alt text](/images/status_gpg_1.png?raw=true "Optional Title")
 
 Upload all unsyncronized accounts in the config file accounts_mega using Tor:
 ```
