@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ------------------------------------------------------------------
-# [Kass] Check all registered accounts
+# [Juanu] Check all registered accounts
 #
 #
 # ------------------------------------------------------------------
@@ -896,8 +896,7 @@ sync(){
 #Hostname
 echo -e "${plus} Host ${txtgrn}$HOST${txtrst}"
 
-
-#if search mode on aqui
+#if search mode on
 # -- MODE SEARCH ----------------------------------------------------------------------------------------------------------
 if [[ "${SEARCH_MODE}" = "on" ]]; then
    echo -e "${plus} Searching ${txtgrn}$SEARCH_NAME ${txtrst}config files in ${txtgrn}$SEARCH_DIR${txtrst}"
@@ -969,9 +968,7 @@ if [[ "${SEARCH_MODE}" = "on" ]]; then
    fi
    echo
 
-   #printf " %-3s  %-10s  %-6s  %-6s  %-6s  %-6s  %-22s\n" "___" "name______" "space_" "free__" "files_" "sync__" "username_____________"
    printf " %-3s  %-10s  %-6s  %-6s  %-18s  %-18s\n" "___" "name______" "space_" "free__" "username_________" "path______________"
-
    echo
 
    for line in $tmp_conf_file;do
@@ -991,9 +988,7 @@ if [[ "${SEARCH_MODE}" = "on" ]]; then
 
    declare_variables
    CONF_FILE=
-
 fi
-
 
 if [[ -n "$CHECK_MODE" ]]; then ###################################################################################
 
