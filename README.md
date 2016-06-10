@@ -88,7 +88,7 @@ Check status for accounts in config file accounts_mega.gpg and show the files:
       mmega --config accounts_mega --mode status --files --passwd            (script will ask)
       mmega --config accounts_mega --mode status --files --passwd "PASSWORD"
 ```
-![Alt text](/images/status gpg.png?raw=true "Optional Title")
+![Alt text](/images/.png?raw=true "Optional Title")
 
 Upload all unsyncronized accounts in the config file accounts_mega using Tor:
 ```
@@ -102,6 +102,6 @@ Check all space available for all accounts in accountsmega config file:
 ```
       mmega -c /home/user/accountsmega -m df
 ```
-![Alt text](/images/df.png?raw=true "Optional Title")
+![Alt text](/images/?raw=true "Optional Title")
 
 
