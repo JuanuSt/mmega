@@ -90,11 +90,11 @@ Check status for accounts in config file accounts_mega.gpg and show the files:
 ```
 ![Alt text](/images/status_gpg_1.png?raw=true)
 
-Upload all unsyncronized accounts in the config file accounts_mega.gpg using Tor:
+Synchronize all unsyncronized accounts in the config file accounts_mega.gpg using Tor:
 ```
-      mmega -c accounts_mega.gpg -m up --tor on --passwd
+      mmega -c accounts_mega.gpg -m sync --tor on --passwd
 ```
-![Alt text](/images/upload_tor1.png?raw=true)
+![Alt text](/images/sync_tor1.png?raw=true)
 
 Check all space available for all accounts in accountsmega config file:
 ```
