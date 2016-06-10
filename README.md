@@ -69,26 +69,35 @@ Search mode only accept the options --tor on|off (see below)
 #### Options
 Option | Description
 --------- | --------------------------------------------------------------------------------------------------------------
---tor | It only accepts the arguments on and off. By default is not set because it implies a connection to api.ipify.org to extract the IP. You can change that. If set to 'off' the script will show the IP and DNS used in the connection. If set to 'on' the connection will be proxied trough Tor using torsocks. Tor and torsocks have to be installed and working.
---passwd | It can be left in blank and you will be asked for it (preferred method) or you can pass the password as argument. If password contains spaces you have to write it between double quotation marks ("PASSWORD").
---files | It shows the files to be uploaded and downloaded. By default status mode don't show file names, so this option can be useful to check the files to be synchronized before to do it.
-
+`--tor` | It only accepts the arguments on and off. By default is not set because it implies a connection to api.ipify.org to extract the IP. You can change that. If set to 'off' the script will show the IP and DNS used in the connection. If set to 'on' the connection will be proxied trough Tor using torsocks. Tor and torsocks have to be installed and working.
+`--passwd` | It the password of gpg private key (see Notes). It can be left in blank and you will be asked for it (preferred method) or you can pass the password as argument. If password contains spaces you have to write it between double quotation marks ("P@SS W0RD").
+`--files` | It shows the files to be uploaded and downloaded. By default status mode don't show file names, so this option can be useful to check the files to be synchronized before to do it.
 (The short descriptors -t -f and -p are also accepted).
 
-> NOTE: The whole config file can be encrypted if the private key is in the system's gpg keyring. If private key is password-protected you will be asked for it. For a cron job you can use a password-less key or pass the password as argument.
+#### Notes
+The whole config file can be encrypted if the private key is in the system's gpg keyring. If private key is password-protected you will be asked for it. For a cron job you can use a password-less key or pass the password as argument.
+
+The script uses a color code to summarizes the state of accounts (see screenshots). Thus synchronized accounts are shown in green, unsynchronized in yellow and fail in red. The fail state means there were errors with directories (local or remote). The errors parsing the config file are shown in black. For cron mail reporting this color code can be annoying. If you want you can set colors variables to nothing in the beginning of script. You should left the underline, bold and  and text reset variables. Any way the format will be altered but will be more readable.
 
 ### Examples:
 Check status for accounts in config file accounts_mega.gpg and show the files:
-      `mmega --config accounts_mega --mode status --files`                     (gpg will ask)
-      `mmega --config accounts_mega --mode status --files --passwd`            (script will ask)
-      `mmega --config accounts_mega --mode status --files --passwd "PASSWORD"` (auto)
-
+```
+      mmega --config accounts_mega --mode status --files                     (gpg will ask)
+      mmega --config accounts_mega --mode status --files --passwd            (script will ask)
+      mmega --config accounts_mega --mode status --files --passwd "PASSWORD"
+```
 Upload all unsyncronized accounts in the config file accounts_mega using Tor:
-      `mmega -c accounts_mega -m up --tor on`
-
+```
+      mmega -c accounts_mega -m up --tor on
+```
 Search for megarc* files in /home/user/ directory and show connection data:
- mmega --search /home/user/ megarc -t off
-
+```
+      mmega --search /home/user/ megarc -t off
+```
 Check all space available for all accounts in mega_music config file:
- mmega -c /home/user/mega_music -m df
+```
+      mmega -c /home/user/mega_music -m df
+```
+
+
 
