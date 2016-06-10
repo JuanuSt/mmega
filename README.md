@@ -39,7 +39,7 @@ passwd | The registered account password. In plaintext (see below).
 local_dir | The account's local directory. It can be left in blank if you only use `df` mode.
 remote_dir | The account's remote directory (often /Root). It can be left in blank if you only use `df` mode.
 
-##### Modes                               
+##### Modes for config file style                               
 ``` 
       mmega --config <file> --mode <df|status|up|down|sync> [options]
 ```
@@ -79,6 +79,8 @@ The whole config file can be encrypted if the private key is in the system's gpg
 
 The script uses a color code to summarizes the state of accounts (see screenshots). Thus synchronized accounts are shown in green, unsynchronized in yellow and fail in red. The fail state means there were errors with directories (local or remote). The errors parsing the config file are shown in black. For cron mail reporting this color code can be annoying. If you want you can set colors variables to nothing in the beginning of script. You should left the underline, bold and  and text reset variables. Any way the format will be altered but will be more readable.
 
+The code is far from being optimized, is a simple script that I use as cron job to maintain a regular contact with my accounts after the change of policy mega.nz where unused accounts are eliminated.
+
 ### Examples:
 Check status for accounts in config file accounts_mega.gpg and show the files:
 ```
@@ -96,10 +98,10 @@ Search for megarc* files in /home/user/ directory and show connection data:
 ```
       mmega --search /home/user/ megarc -t off
 ```
-Check all space available for all accounts in mega_music config file:
+Check all space available for all accounts in accountsmega config file:
 ```
-      mmega -c /home/user/mega_music -m df
+      mmega -c /home/user/accountsmega -m df
 ```
-
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
 
