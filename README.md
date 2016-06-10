@@ -57,7 +57,7 @@ Mode | Description
 > NOTE: When using `up|down|sync` modes mega.nz site and megatools provide a security method to never overwrite the files. If there are discrepancies, the files are marked with a number (that indicates the node) and the word conflict. You will have to check 'by hand' these discrepancies (See megaus code at github). However if two copies of the same file are named the different way they will be considered as two different files.
 
 #### Search style
-```bash
+```
       mmega --search <dir> <name> [options]
 ```
 Megatools allows a file with account login parameters to avoid writing them each time (see megatools manual). If you have several of them, you can you use this style to find them and consult the accounts (and the path to these config files). It only retrieves Free, Used and Total space in cloud. It prints Free and Total, the username and the path to config file for each account. Finally it summarizes this information.
@@ -86,6 +86,8 @@ Check status for accounts in config file accounts_mega.gpg and show the files:
       mmega --config accounts_mega --mode status --files --passwd            (script will ask)
       mmega --config accounts_mega --mode status --files --passwd "PASSWORD"
 ```
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
 Upload all unsyncronized accounts in the config file accounts_mega using Tor:
 ```
       mmega -c accounts_mega -m up --tor on
