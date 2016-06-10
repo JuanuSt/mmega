@@ -90,10 +90,11 @@ Check status for accounts in config file accounts_mega.gpg and show the files:
 ```
 ![Alt text](/images/status_gpg_1.png?raw=true)
 
-Upload all unsyncronized accounts in the config file accounts_mega using Tor:
+Upload all unsyncronized accounts in the config file accounts_mega.gpg using Tor:
 ```
-      mmega -c accounts_mega -m up --tor on
+      mmega -c accounts_mega.gpg -m up --tor on --passwd
 ```
+![Alt text](/images/up_tor1.png?raw=true)
 Search for megarc* files in /home/user/ directory and show connection data:
 ```
       mmega --search /home/user/ megarc -t off
@@ -102,6 +103,6 @@ Check all space available for all accounts in accountsmega config file:
 ```
       mmega -c /home/user/accountsmega -m df
 ```
-![Alt text](/images/mode_df_1?raw=true)
+![Alt text](/images/mode_df_1.png?raw=true)
 
 
