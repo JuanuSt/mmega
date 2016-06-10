@@ -1,26 +1,29 @@
 # mmega
 Bash script to check multiple registered accounts in mega.nz cloud using megatools.
 
-Multi-account megatools [mmega]
+multi-account megatools [mmega]
 ================================================================================
 Check free space and files of several registered accounts in mega.nz cloud using
 the nice code megatools written by megaus (https://github.com/megous/megatools).
 
-USAGE mmega --config <file> --mode <df|status|up|down|sync> [options] 
-      mmega --search <dir> <name> [options]
+USAGE      
+      mmega --config file --mode df|status|up|down|sync [options]       
+      mmega --search dir name [options]         
+      
+      
 
 (The short descriptors -c -m and -s are also accepted).
 
-DEPENDENCIES
+Dependencies
 ======================================
-megatools
-torsocks (if Tor is used)
-gpg (if encryption is used)
-curl (if IP is retrieved)
-dig (if DNS is retrieved)
-Some bash specific commands.
+megatools        
+torsocks (if Tor is used)       
+gpg (if encryption is used)        
+curl (if IP is retrieved)         
+dig (if DNS is retrieved)           
+Some bash specific commands             
 
-HOW IT WORKS
+How it works
 ======================================
 This script works in two styles, 'config file' style or 'search' style.
 
