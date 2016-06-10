@@ -60,7 +60,7 @@ Mode | Description
 ```
       mmega --search <dir> <name> [options]
 ```
-Megatools allows a file with account login parameters to avoid writing them each time (see megatools manual). If you have several of them, you can you use this style to find them and consult the accounts (and the path to these config files). It only retrieves Free, Used and Total space in cloud. It prints Free and Total, the username and the path to config file for each account. Finally it summarizes this information.
+Megatools allows a file with account login parameters to avoid writing them each time (see megatools manual). If you have several of them, you can you use this style to find them and consult the accounts (and the path to these config files). It only retrieves Free, Used and Total space in cloud. It prints Free, Total, username and path to config file for each account. Finally it summarizes this information.
 
 The search dir is mandatory. The name can be left in blank (preferred method) or you can pass it as argument. When asked for the name you should use wildcards to search for a pattern in your accounts (as .megarc*) but if you pass it as argument don't use wildcards, the script will add * to this name to search for a pattern and not a specific name.
 
