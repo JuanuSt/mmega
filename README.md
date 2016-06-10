@@ -2,9 +2,8 @@
 Bash script to check multiple registered accounts in mega.nz cloud using megatools.
 
 ## multi-account megatools [mmega]
-Check free space and files of several registered accounts in mega.nz cloud using
-the nice code megatools written by [megaus] (https://github.com/megous/megatools).
-```
+Check free space and files of several registered accounts in mega.nz cloud using the nice code megatools written by [megaus] (https://github.com/megous/megatools).
+```bash
       mmega --config <file> --mode <df|status|up|down|sync> [options]       
       mmega --search <dir> <name> [options]         
 ```      
@@ -21,38 +20,26 @@ the nice code megatools written by [megaus] (https://github.com/megous/megatools
 ## How it works
 This script works in two styles, 'config file' style or 'search' style.
 
-### Config file style          
- It reads a config file with account's parameters [login and directories] for          
- each account (see below). This file is parsed to check common mistakes in          
- format (five fields comma separated). Using this file and the suite megatools          
- the script checks the free space available for each account. If mode 'status'          
- is used (see below) it compares files in local and remote directories and          
- summarizes the accounts state. It prints the free space and the number of files           
- to be downloaded or uploaded for each account. If modes 'sync|down|up' are used           
- these files are then synchronized accordingly.         
+#### Config file style          
+It reads a config file with account's parameters (login and directories) for each account (see below). This file is parsed to check common mistakes in format (five fields comma separated). Using this file and the suite megatools the script checks the free space available for each account. If mode `status` is used (see below) it compares files in local and remote directories and summarizes the accounts state. It prints the free space and the number of files to be downloaded or uploaded for each account. If modes `sync|down|up` are used these files are then synchronized accordingly. 
 
-  Config file         
-  ===========          
-  It contains in each line the account's parameters. The structure is comma       
-  separated with 5 fields:         
+##### Config file         
+It contains in each line the account's parameters. The structure is comma separated with 5 fields:
 
-  name1,username1,passwd1,local_dir1,remote_dir1,        
-  name2,username2,passwd2,local_dir2,remote_dir2,         
-  name3,username3,passwd3,local_dir3,remote_dir3,        
-  ...
-  
-  name        The name to describe the account. It will be shortened to ten         
-              characters for printing.                
-                          
-  username    The registered account mail in mega.nz.                                     
+>  name1,username1,passwd1,local_dir1,remote_dir1,        
+>  name2,username2,passwd2,local_dir2,remote_dir2,         
+>  name3,username3,passwd3,local_dir3,remote_dir3,        
+>  ...
 
-  passwd      The registered account password. In plaintext (see below).                               
-              
-  local_dir   The account's local directory. It can be left in blank if you only                             
-              use df mode.                      
+name        The name to describe the account. It will be shortened to ten characters for printing.                
 
-  remote_dir  The account's remote directory (often /Root). It can be left in                        
-              blank if you only use df mode.                           
+username    The registered account mail in mega.nz.
+
+passwd      The registered account password. In plaintext (see below).
+
+local_dir   The account's local directory. It can be left in blank if you only use df mode.
+
+remote_dir  The account's remote directory (often /Root). It can be left in blank if you only use df mode.                           
 
   Modes                               
   ===== 
