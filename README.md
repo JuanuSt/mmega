@@ -70,7 +70,7 @@ Search mode only accept the options `--tor on|off` (see below)
 Option | Description
 --------- | --------------------------------------------------------------------------------------------------------------
 `--tor` | It only accepts the arguments on and off. By default is not set because it implies a connection to api.ipify.org to extract the IP. You can change that. If set to 'off' the script will show the IP and DNS used in the connection. If set to 'on' the connection will be proxied trough Tor using torsocks. Tor and torsocks have to be installed and working.
-`--passwd` | It the password of gpg private key (see Notes). It can be left in blank and you will be asked for it (preferred method) or you can pass the password as argument. If password contains spaces you have to write it between double quotation marks ("P@SS W0RD").
+`--passwd` | It is the password of gpg private key (see Notes). It can be left in blank and you will be asked for it (preferred method) or you can pass the password as argument. If password contains spaces you have to write it between double quotation marks ("P@SS W0RD").
 `--files` | It shows the files to be uploaded and downloaded. By default status mode don't show file names, so this option can be useful to check the files to be synchronized before to do it.
 (The short descriptors -t -f and -p are also accepted).
 
