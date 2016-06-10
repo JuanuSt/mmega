@@ -94,15 +94,16 @@ Upload all unsyncronized accounts in the config file accounts_mega.gpg using Tor
 ```
       mmega -c accounts_mega.gpg -m up --tor on --passwd
 ```
-![Alt text](/images/up_tor1.png?raw=true)
-Search for megarc* files in /home/user/ directory and show connection data:
-```
-      mmega --search /home/user/ megarc -t off
-```
+![Alt text](/images/upload_tor1.png?raw=true)
+
 Check all space available for all accounts in accountsmega config file:
 ```
       mmega -c /home/user/accountsmega -m df
 ```
 ![Alt text](/images/mode_df_1.png?raw=true)
 
+Search for megarc* files in /home/user/ directory and show connection data:
+```
+      mmega --search /home/user/ megarc -t off
+```
 
