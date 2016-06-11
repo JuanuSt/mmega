@@ -1,7 +1,7 @@
-# mmega
+# megatools multi-account 
 Bash script to check multiple registered accounts in mega.nz cloud using megatools.
 
-## megatools multi-account [mmega]
+## mmega
 Check free space and files of several registered accounts in mega.nz cloud using the nice code megatools written by [megaus] (https://github.com/megous/megatools).
 ```
       mmega --config <file> --mode <df|status|up|down|sync> [options]       
