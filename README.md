@@ -110,6 +110,6 @@ Search for megarc* files in /home/user/ directory and show connection data:
 
 Cron job format
 
-![Alt text](/images/cronjobformat.png?raw=true)
+![Alt text](/images/cronjobformat2.png?raw=true)
 
 
