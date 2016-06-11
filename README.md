@@ -107,3 +107,8 @@ Search for megarc* files in /home/user/ directory and show connection data:
       mmega --search /home/user/ megarc -t off
 ```
 ![Alt text](/images/search_mode1.png?raw=true)
+
+Cron job format
+![Alt text](/images/cronjobformat.png?raw=true)
+
+
