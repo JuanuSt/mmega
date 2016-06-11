@@ -94,7 +94,7 @@ Synchronize all unsyncronized accounts in the config file accounts_mega.gpg usin
 ```
       mmega -c accounts_mega.gpg -m sync --tor on --passwd
 ```
-![Alt text](/images/sync_tor1.png?raw=true)
+![Alt text](/images/sync_tor3.jpg?raw=true)
 
 Check all space available for all accounts in accountsmega config file:
 ```
