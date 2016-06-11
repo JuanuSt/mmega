@@ -81,7 +81,7 @@ The script uses a color code to summarizes the state of accounts (see screenshot
 
 The code is far from being optimized, is a simple script that I use as cron job to maintain a regular contact with my accounts after the change of policy mega.nz where unused accounts are eliminated.
 
-### Examples:
+### Examples
 Check status for accounts in config file accounts_mega.gpg and show the files:
 ```
       mmega --config accounts_mega --mode status --files                     (gpg will ask)
