@@ -84,9 +84,9 @@ The code is far from being optimized, is a simple script that I use as cron job 
 ### Examples
 Check status for accounts in config file accounts_mega.gpg and show the files:
 ```
-      mmega --config accounts_mega --mode status --files                     (gpg will ask)
-      mmega --config accounts_mega --mode status --files --passwd            (script will ask)
-      mmega --config accounts_mega --mode status --files --passwd "PASSWORD"
+      mmega --config accounts_mega.gpg --mode status --files                     (gpg will ask)
+      mmega --config accounts_mega.gpg --mode status --files --passwd            (script will ask)
+      mmega --config accounts_mega.gpg --mode status --files --passwd "PASSWORD"
 ```
 ![Alt text](/images/status_gpg_1.png?raw=true)
 
