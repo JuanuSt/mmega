@@ -102,7 +102,7 @@ Check all space available for all accounts in accountsmega config file:
 ```
 ![Alt text](/images/mode_df_1.png?raw=true)
 
-Search for megarc* files in /home/user/ directory and show connection data:
+Search for megarc* files in /home/user/ directory and show accounts data:
 ```
       mmega --search /home/user/ megarc -t off
 ```
