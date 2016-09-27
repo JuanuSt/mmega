@@ -551,7 +551,6 @@ cut_name() {
 
 # Get data from a line
 get_data() {
- printf " %-5s  %-20s\r" " ${point_blk}" "Getting data..."
 
  data_num=$($MEGADF -u $username -p "$passwd" 2>&1 | grep 'Total\|Free\|Used') #in bytes
 
@@ -592,7 +591,6 @@ get_files() {
     total_processed=$(($total_processed + $num_total))
 
  else
-   printf " %-5s  %-20s\r" " ${varrows_down_blk}" "Getting files..."
    #get files to upload
    $MEGACOPY -u $username -p "$passwd" --dryrun --reload --local "$local_dir" --remote "$remote_dir" 2>&1 | grep ^F | cut -d ' ' -f 2- > "$TMP_DIR"/files_to_upload_$name
    num_to_up="$(grep -c $remote_dir $TMP_DIR/files_to_upload_$name)"
@@ -627,7 +625,6 @@ get_files() {
 
 # Print status and get accounts to sync
 get_status() {
- printf " %-16s %-20s\r" " ${point_blk}" "Getting status..."
  if [[ "$error_data_num" = 1 ]]; then
     accounts_err=$(($accounts_err + 1))
     acc_to_sync=$( echo "$acc_to_sync" | grep -v "$line")
