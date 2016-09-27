@@ -77,7 +77,7 @@ Option | Description
 #### Notes
 The whole config file can be encrypted if the private key is in the system's gpg keyring. If private key is password-protected you will be asked for it. For a cron job you can use a password-less key or pass the password as argument.
 
-The script uses a color code to summarizes the state of accounts (see screenshots). Thus synchronized accounts are shown in green, unsynchronized in yellow and fail in red. The fail state means there were errors with directories (local or remote). The errors parsing the config file are shown in black. For cron mail reporting this color code can be annoying. If you want you can set colors variables to nothing in the beginning of script. You should left the underline, bold and  and text reset variables. Any way the format will be altered but will be more readable.
+The script uses a color code to summarizes the state of accounts (see screenshots). Thus synchronized accounts are shown in green, unsynchronized in yellow and fail in red. The fail state means there were errors with directories (local or remote). The errors parsing the config file are shown in black. For cron mail reporting this color code can be annoying. If you want you can set colors variables to nothing in the beginning of script or you can use the new mmega_cron.sh script which has been adapted for a cron job.
 
 The code is far from being optimized, is a simple script that I use as cron job to maintain a regular contact with my accounts after the change of policy mega.nz where unused accounts are eliminated.
 
