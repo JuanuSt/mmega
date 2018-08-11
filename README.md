@@ -1,8 +1,15 @@
 # megatools multi-account 
-Bash script to check multiple registered accounts in mega.nz cloud using megatools.
+Bash script to check multiple registered accounts in mega.nz cloud using [megatools](https://github.com/megous/megatools).
+
+For automated jobs use `mmega_cron.sh`
+
+If you want to save all the information about your files in a database you can check out this others scripts:
+
+* [mmega_pg](https://bitbucket.org/juanust/mmega_pg). Using PostgreSQL as database (preferred).
+* [mmega_my](https://bitbucket.org/juanust/mmega_my). Using MySQL as databse (abandoned but still working).
 
 ## mmega
-Check free space and files of several registered accounts in mega.nz cloud using the nice code megatools written by [megaus] (https://github.com/megous/megatools).
+Check free space and files of several registered accounts in mega.nz cloud using the nice code megatools written by [megaus](https://github.com/megous).
 ```
       mmega --config <file> --mode <df|status|up|down|sync> [options]       
       mmega --search <dir> <name> [options]         
