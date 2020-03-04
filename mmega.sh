@@ -91,8 +91,8 @@ touch $LOCK_FILE
 trap "rm -rf $TMP_DIR $LOCK_FILE" EXIT
 
 # -- Variables ------------------------------------------------------------------------------------------------------------------
-MEGADF=/usr/local/bin/megadf
-MEGACOPY=/usr/local/bin/megacopy
+MEGADF=$(which megals)
+MEGACOPY=$(which megacopy)
 
 HOST=$(hostname)
 date=$(date +"%d.%m.%y")
