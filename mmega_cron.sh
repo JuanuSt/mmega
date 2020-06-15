@@ -343,7 +343,7 @@ fi
 get_info_file() {
  conf_filename=$(echo "$CONF_FILE" | rev | cut -d / -f1 | rev)
  conf_extension=${CONF_FILE##*.}
- conf_file_type=$(file $CONF_FILE | cut -d ' ' -f 3)
+ conf_file_type=$(file $CONF_FILE | cut -d ' ' -f3 | tr -d ',')
 }
 
 set_tmp_file(){
@@ -358,7 +358,6 @@ set_tmp_file(){
     fi
 
     # data from encrypted file (id key and mail)
-
     GPG_KEY=$(cat "$TMP_DIR/id.pubkey" | grep "ID" | cut -d ' ' -f 10 | cut -d , -f 1)
     MAIL_KEY=$(cat "$TMP_DIR/id.pubkey" | grep "@" | cut -d '<' -f 2 | cut -d '>' -f 1)
 
